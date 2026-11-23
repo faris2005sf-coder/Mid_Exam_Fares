@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F0E8"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="68dp"
+    android:paddingBottom="28dp">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="ARTSPACE GALLERY"
+        android:textColor="#000000"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 / 6"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/artworkFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.88"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="12dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/ivArtwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:contentDescription="Artwork Image"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starry Night"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#292929"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vincent van Gogh - 1889"
+        android:textSize="16sp"
+        android:textColor="#777777"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnPrevious"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#354477"
+            android:backgroundTint="#DCE5FA"
+            android:enabled="false"
+            android:layout_marginEnd="7dp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4169C9"
+            android:layout_marginStart="7dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
